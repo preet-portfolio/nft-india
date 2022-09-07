@@ -18,14 +18,15 @@ function NFTDropPage() {
     return (
         <div className='flex h-screen flex-col lg:grid lg:grid-cols-10'>
             {/* Left */}
-            <div className='lg:col-span-4 bg-gradient-to-br from-cyan-800 to-rose-500'>
+            <div className='lg:col-span-4 bg-gradient-to-br from-orange-500 to-green-500'>
                 <div className='flex flex-col items-center justify-center py-2 lg:min-h-screen'>
-                    <div className='bg-gradient-to-br from-yellow-400 to-purple-600 p-2 rounded-xl'>
-                        <img className='w-44 rounded-xl object-cover lg:h-96 lg:w-72' src="https://links.papareact.com/8sg" alt="" />
+                    <div className='bg-gradient-to-br from-blue-800 to-white p-2 rounded-xl'>
+                        <img className='w-44 rounded-xl object-cover lg:h-96 lg:w-72' src="https://cdn.discordapp.com/attachments/1008571154392436826/1017142607031308299/kkjui_gandhi_on_india_9968e571-5efc-4df9-926f-a4457f12ef3f.png" alt="" />
                     </div>
                     <div className='text-center p-5 space-y-2'>
-                        <h1 className='text-4xl font-bold text-white'>Preet's Ape</h1>
-                        <h2 className='text-white'>A collection of indian based NFT</h2>
+                        <h1 className='text-4xl font-bold text-white'>Gandhi's NFT</h1>
+                        <h2 className='text-white'>A collection of NFT on Gandhi.</h2>
+                        <p className='text-white bg-purple-700 rounded-full p-3' >Proudly made by <a href='https://fastidious-choux-d70553.netlify.app/'>Preet Panchal with ❤️</a></p>
                     </div>
                 </div>
             </div>
@@ -41,7 +42,7 @@ function NFTDropPage() {
                         NFT Marketplace
                     </h1>
                     <button onClick={() => (address ? disconnect() : connectWithMetamask())}
-                        className='rounded-full bg-rose-400 text-white px-4 py-2 text-xs
+                        className='rounded-full bg-green-800 text-white px-4 py-2 text-xs
                     lg:px-5 lg:py-3 lg:text-base'>
                         {address ? 'Sign Out' : 'Sign In'}
                     </button>
